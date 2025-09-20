@@ -22,10 +22,18 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header-container">
             <a href="#"><h1 class="logo">B-OZ</h1></a>
 
             <nav>
+                <input type="checkbox" id="menu-hamburger">
+
+                <label for="menu-hamburger">
+                    <div class="menu">
+                        <span class="hamburger"></span>
+                    </div>
+                </label>
+
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servico">Serviço</a></li>
@@ -39,29 +47,29 @@
         <h2>Aumente a qualidade do ar que você respira!</h2>
     </section>
 
-    <section class="sobre">
-        <div>
+    <section class="sobre" id="sobre">
+        <div class="item">
             <h3>O que é Oxi-sanitização?</h3>
 
             <p>Oxi-sanitização é um processo de sanitização e purificação do ar.<br>
             O processo garante a eliminação de microrganismos que surgem por substâncias orgânicas e inorgânicas causadores de maus odores.</p>
         </div>
 
-        <!-- Imagem direita -->
-        <!-- Imagem esquerda -->
+        <div class="imagem direita"></div>
+        <div class="imagem esquerda"></div>
 
-        <div>
+        <div class="item">
             <h3>O que é um gerador de ozônio?</h3>
 
             <p>Os geradores de ozônio são equipamentos eletrônicos que produzem o ozônio através de tecnologia de Plasma Frio, utilizando o oxigênio presente no ar como matéria prima.</p>
-
         </div>
     </section>
 
-    <section class="servico">
-        <div>
-            <!-- imagem gerador -->
-            <div>
+    <section class="servicos" id="servicos">
+        <div class="servico">
+            <img src="./src/imagens/ozpro-1.png" alt="Imagem 1">
+
+            <div class="servico-info">
                 <h3>Serviço</h3>
 
                 <p>A oxi-sanitização garante uma higienização avançada. Por ser um gás, o ozônio tem o poder para eliminar maus odores provenientes de cigarro, mofo, animais, vômito, comidas e bebidas, entre outros, além de ajudar a inativar bactérias, fungos e vírus de vários tipos.</p>
@@ -70,9 +78,10 @@
             </div>
         </div>
 
-        <div>
-            <!-- imagem perfil -->
-            <div>
+        <div class="servico">
+            <img src="./src/imagens/profile2.png" alt="Imagem 2">
+
+            <div class="servico-info">
                 <h3>Briam Ferreira</h3>
                 <h4>Técnico Especialista</h4>
 
@@ -84,17 +93,18 @@
         </div>
     </section>
 
-    <footer class="rodape">
+    <footer class="rodape" id="contato">
         <h2>B-OZ</h>
-        <h3>Oxi-sanitização</h3>
-
-        <a href="https://www.linkedin.com/in/briam-ferreira/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <a href="https://github.com/fcbriam" target="_blank">
-            <i class="fa-brands fa-square-github"></i>
-        </a>
+        <h3>OXI-SANITIZAÇÃO</h3>
+        <div class="rede-sociais">
+            <a href="https://www.linkedin.com/in/briam-ferreira/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/fcbriam" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
